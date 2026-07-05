@@ -1,0 +1,1 @@
+# license.goldbod.-gov.gh
