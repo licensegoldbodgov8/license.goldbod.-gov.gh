@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>License Verification</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between p-4 antialiased">
+
+
+
+  <div class="w-full max-w-md mx-auto text-center mt-2">
+
+    <p class="text-sm font-semibold tracking-wide text-slate-700 select-none">license.goldbod.gov.gh</p>
+
+  </div>
+
+
+
+  <main class="w-full max-w-md mx-auto flex-grow flex flex-col justify-center my-6">
+
+   
+
+    <div class="flex items-center justify-center gap-4 bg-white p-4 rounded-2xl shadow-xs mb-6 border border-gray-100">
+
+      <img src="sark.JPEG" alt="sark Logo" class="w-24 h-auto object-contain">
+
+      <div class="text-left">
+
+        <h1 class="text-xl md:text-2xl font-bold text-slate-900 leading-tight">GoldBod<br>License<br>Verification<br>System</h1>
+
+      </div>
+
+    </div>
+
+   
+
+    <div class="text-center mb-6 px-4">
+
+      <div class="flex justify-center items-center gap-1 text-emerald-600 font-bold mb-2">
+
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+
+        </svg>
+
+        <span class="tracking-wide">Valid</span>
+
+      </div>
+
+      <p class="text-slate-600 text-base leading-relaxed font-medium">
+
+        This license has been validated through the GoldBod verification system and is currently in good standing.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="bg-white rounded-2xl shadow-sm border-l-4 border-emerald-600 p-6 md:p-8">
+
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">License Details</h2>
+
+     
+
+      <div class="space-y-4">
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">Company Name:</span>
+
+          <span id="company-name" class="text-base font-semibold text-slate-800">Kwaku Frimpong Gold Buying Agent</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">License Approval Date:</span>
+
+          <span id="approval-date" class="text-base font-semibold text-slate-800">Wednesday, February 11, 2026</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">Issue Date:</span>
+
+          <span id="issue-date" class="text-base font-semibold text-slate-800">Wednesday, February 11, 2026</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">Expiration Date:</span>
+
+          <span id="expiry-date" class="text-base font-semibold text-slate-800">Wednesday, February 10, 2027</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">License Number:</span>
+
+          <span id="license-num" class="text-base font-mono font-semibold text-slate-800 tracking-tight">GGB/LB1/T10969/205/26</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">License Type:</span>
+
+          <span id="license-type" class="text-base font-semibold text-slate-800">Tier One Buyer</span>
+
+        </div>
+
+
+
+        <div>
+
+          <span class="block text-slate-500 text-sm font-medium">Issuing Authority:</span>
+
+          <span class="text-base font-semibold text-slate-800">Ghana GoldBod</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+
+  <footer class="w-full max-w-md mx-auto text-center border-t border-gray-200/60 pt-4 pb-2">
+
+    <p class="text-xs text-slate-400 font-medium tracking-wide">
+
+      &copy; 2025 GoldBod - Ghana Gold Board
+
+    </p>
+
+  </footer>
+
+
+
+  <script>
+
+    const params = new URLSearchParams(window.location.search);
+
+    if(params.has('name'))   document.getElementById('company-name').textContent = params.get('name');
+
+    if(params.has('app'))    document.getElementById('approval-date').textContent = params.get('app');
+
+    if(params.has('issue'))  document.getElementById('issue-date').textContent = params.get('issue');
+
+    if(params.has('expiry')) document.getElementById('expiry-date').textContent = params.get('expiry');
+
+    if(params.has('id'))     document.getElementById('license-num').textContent = params.get('id');
+
+    if(params.has('type'))   document.getElementById('license-type').textContent = params.get('type');
+
+  </script>
+
+
+
+</body>
+
+</html>  
+
